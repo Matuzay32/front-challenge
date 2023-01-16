@@ -1,0 +1,9 @@
+services:
+   web:
+      container_name: frontToolBox
+      restart: always
+      build: .
+      ports:
+         - "4000:3000"
+      volumes:
+         - .:/app
